@@ -1,14 +1,7 @@
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Divider,
-  Image,
-} from "@heroui/react";
+import { Card, CardBody, CardHeader, Image } from "@heroui/react";
 
 interface IList {
-  data: Record<string, any>[];
+  data: Record<string, string | number>[];
 }
 
 export const List = ({ data = [] }: IList) => {
@@ -26,7 +19,7 @@ export const List = ({ data = [] }: IList) => {
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl"
-                src={picture}
+                src={picture as string}
                 width={270}
               />
             </CardBody>

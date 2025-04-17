@@ -1,13 +1,10 @@
 import {
-  Button,
   Modal as ModalComponent,
   ModalBody,
   ModalContent,
-  ModalFooter,
   ModalHeader,
   useDisclosure,
 } from "@heroui/react";
-import { FC, ReactNode } from "react";
 import { EditIcon } from "./Icons";
 import { Form } from "./Form";
 

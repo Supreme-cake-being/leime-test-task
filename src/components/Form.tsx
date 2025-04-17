@@ -1,7 +1,6 @@
 import { Button, Input, ModalFooter } from "@heroui/react";
 import { useState } from "react";
 import { usePatch } from "../hooks/usePatch";
-import { useMemes } from "../hooks/useMemes";
 
 interface IForm {
   id: string;

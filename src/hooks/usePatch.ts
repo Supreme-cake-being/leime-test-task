@@ -1,9 +1,13 @@
 import axios from "axios";
-import { useState, useEffect, useCallback } from "react";
 
-export const usePatch = async ({ id, name, picture, likes }: any) => {
+export const usePatch = async ({
+  id,
+  name,
+  picture,
+  likes,
+}: Record<string, string | number>) => {
   try {
-    const response = await axios.patch("", {
+    await axios.patch("", {
       id,
       name,
       picture,
