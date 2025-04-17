@@ -9,8 +9,9 @@ const eslintConfig = [
   ...compat.config({
     extends: ["next"],
     rules: {
-      "react/no-unescaped-entities": "off",
-      "@next/next/no-page-custom-font": "off",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-explicit-any": "off",
     },
   }),
 ];
