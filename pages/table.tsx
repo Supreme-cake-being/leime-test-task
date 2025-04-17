@@ -1,9 +1,13 @@
-import { Button } from "@heroui/react";
+import { TableComponent } from "@/src/components/Table";
+import { useMemes } from "@/src/hooks/useMemes";
+import { useEffect } from "react";
 
 const TablePage = () => {
+  const { data, handleFetch } = useMemes();
+
   return (
     <>
-      <Button>Button</Button>
+      <TableComponent data={data} handleFetch={handleFetch} />
     </>
   );
 };
